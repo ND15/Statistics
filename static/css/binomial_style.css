@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+h1
+{
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+body
+{
+    background-color: white;
+}
+.uniform
+{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    margin: 0px 0 0 -150px;
+    width:400px;
+    height:400px;
+}
+.btn
+{
+    padding: 10px;
+    border: none;
+    width: 100px;
+    background-color: rgb(247, 122, 6);
+}
+.btn1
+{
+    border-radius: 5px;
+}
+.input1
+{
+    padding: 10px;
+    border: none;
+    background-color: bisque;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.in1
+{
+    border-radius: 5px;
+}
