@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Binomial Distribution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/binomial_style.css') }}">
 </head>
 <body>
     <h1>Binomial Distribution</h1>
-    <div class="uniform">
-    <form action="{{url_for('binomial')}}" method="post">
-            <input type="text" name="n" placeholder="n value" required="required" class="input1 in1">
-            <br>
-            <input type="text" name="x" placeholder="x value" required="required" class="input1 in1">
-            <br>
-            <input type="text" name="p" placeholder="probability" required="required" class="input1 in1">
-            <br>
-            <input type="text" name="type" placeholder="type" required="required" class="input1 in1">
-            <p>Types: 'Atleast is <=', Exactly  is =, Atmost is >= </p>
-            <br>
-            <button type="submit" class="btn btn1">Predict</button>
-        </form>
-        <br>
-        {{ prediction_text }}
-    </div>
+    <section>
+        <div class="box_shape">
+            <div class="uniform">
+                <form action="{{url_for('binomial')}}" method="post">
+                    <input type="text" name="n" placeholder="n value" required="required" class="input1 in1">
+                    <br>
+                    <input type="text" name="x" placeholder="x value" required="required" class="input1 in1">
+                    <br>
+                    <input type="text" name="p" placeholder="probability" required="required" class="input1 in1">
+                    <br>
+                    <input type="text" name="type" placeholder="type" required="required" class="input1 in1">
+                    <p>Types: 'Atleast is <=', Exactly  is =, Atmost is >= </p>
+                    <br>
+                    <button type="submit" class="btn btn1">Predict</button>
+                    <p id=text>{{ prediction_text }}</p>
+                </form>
+                <br>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,29 +1,37 @@
 <html>
     <head>
         <title>Welcome</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/stats_styles.css') }}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orelega+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orelega+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet" />
+
     </head>
     <body>
-        <div class="nav_bar">
-        <a href="" class="trademark">STATY</a>
-        <nav>
-            <ul>
-                <li><a href="stats.html" class="Distribution">Distribution</a></li>
-                <li><a href="stats.html" class="Statistics">Statistics</a></li>
-            </ul>
-        </nav>
+        <header>
+            <div class="logo-container">
+                <a href="#" class="logo">STATY</a>
+            </div>
+            <div class = "nav-links">
+                <a href="" class = "distribution">DISTRIBUTION</a>
+                <a href="" class = "statistics">STATISTICS</a>
+            </div>
+        </header>
         </div>
         <div class='linear'>
             <a href="binomial">
-                <button class='btn btn1'>Binomial</button>
+                <button class='btn1'>Binomial</button>
             </a>
         </div>
         <br>
         <div class='linear'>
             <a href="uniform">
-                <button class='btn btn1'>Uniform</button>
+                <button class='btn1'>Uniform</button>
             </a>
         </div>
     </body>
