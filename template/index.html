@@ -1,60 +1,48 @@
-<!--<html>-->
-<!--    <head>-->
-<!--        <title>Welcome</title>-->
-<!--        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
-<!--        <link rel="preconnect" href="https://fonts.gstatic.com">-->
-<!--        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orelega+One&display=swap" rel="stylesheet">-->
-<!--    </head>-->
-<!--    <body>-->
-<!--        <div class="nav_bar">-->
-<!--        <a href="" class="trademark">STATY</a>-->
-<!--        <nav>-->
-<!--            <ul>-->
-<!--                <li><a href="stats" class="Distribution">Distribution</a></li>-->
-<!--                <li><a href="stats" class="Statistics">Statistics</a></li>-->
-<!--            </ul>-->
-<!--        </nav>-->
-<!--        </div>-->
-<!--        <div class='linear'>-->
-<!--            <a href="stats">-->
-<!--                <button class='btn btn1'>Stats</button>-->
-<!--            </a>-->
-<!--        </div>-->
-<!--        <br>-->
-<!--    </body>-->
-<!--</html>-->
-
 <html>
 
 <head>
     <title>Welcome</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orelega+One&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="#" class="logo">STATY</a>
-        </div>
-        <div class = "nav-links">
-            <a href="" class = "distribution">DISTRIBUTION</a>
-            <a href="" class = "statistics">STATISTICS</a>
-        </div>
-    </header>
-    <section class="hero">
-        <div class = "hero-text">
-            <h1>SOLVE STATISTICS<br>WITH STATY.</h1>
-        </div>
-        <a href="stats">
-            <button class='btn1'>STATS</button>
-        </a>
-    </section>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <a href="">STATY</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="" class="distribution">DISTRIBUTION &#9660;</a>
+                        <ul class="drop_down">
+                            <li><a href="uniform">Uniform</a></li>
+                            <li><a href="binomial">Binomial</a></li>
+                            <li><a href="">Exponential</a></li>
+                            <li><a href="">Normal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">STATISTICS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>SOLVE STATISTICS<br>WITH STATY.</h1>
+            </div>
+            <a href="stats">
+                <button class='btn1'>STATS</button>
+            </a>
+        </section>
+    </div>
 </body>
 
 </html>
