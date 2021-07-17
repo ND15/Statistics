@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 h1
 {
     text-align: center;
@@ -85,4 +91,27 @@ header{
 .logo
 {
     color: white;
+}
+
+.drop_down{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    line-height: 2.5rem;
+    opacity: 0;
+    visibility: hidden;
+    color: black;
+    border-radius: 3px;
+    text-align: center;
+}
+
+nav ul li:hover .drop_down{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li ul li:hover{
+    background-color: rgb(161, 211, 173);
 }
