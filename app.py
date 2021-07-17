@@ -53,11 +53,29 @@ def binomial():
         p = float(p)
         type_str = request.form['type']
         if type_str in ['mean', 'variance']:
-            res = binom_num(n, p, (1-p), type_str)
+            res = binom_num(n, p, (1 - p), type_str)
         else:
             res = binom(n, x, p, type_str)
         return render_template('binomial.html', prediction_text='{}: {}'.format(type_str, res))
     return render_template('binomial.html', prediction_text='None')
+
+
+@app.route('/uniform', methods=['GET', 'POST'])
+def uniform():
+    if 'n' in request.form:
+        n = request.form['n']
+        x = request.form['x']
+        p = request.form['p']
+        n = int(n)
+        x = int(x)
+        p = float(p)
+        type_str = request.form['type']
+        if type_str in ['mean', 'variance']:
+            res = binom_num(n, p, (1 - p), type_str)
+        else:
+            res = binom(n, x, p, type_str)
+        return render_template('uniform.html', prediction_text='{}: {}'.format(type_str, res))
+    return render_template('uniform.html', prediction_text='None')
 
 
 if __name__ == '__main__':
