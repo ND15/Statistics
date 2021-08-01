@@ -1,2 +1,2 @@
-# Statistics
-A Repo for Statistics formulas
+## Statistics
+A Repo for calculating various statistical distributions.
