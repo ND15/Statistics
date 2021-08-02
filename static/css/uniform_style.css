@@ -17,7 +17,6 @@ section
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .box_shape
@@ -80,7 +79,10 @@ p
     }
     .box_shape
     {
+        padding-top: 20px;
         background-color: white;
+        width: 250px;
+        height: 310px;
     }
     .btn1
     {
@@ -93,9 +95,15 @@ p
     {
         color: rgb(0, 0, 0);
         text-align: center;
+        width: 100%;
     }
     body
     {
         background-color: pink;
+    }
+    .in1
+    {
+        margin-top: 0px;
+        height: 40px;
     }
 }

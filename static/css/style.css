@@ -10,11 +10,11 @@ a, a:hover, a:focus, a:active{
 }
 
 .container{
-    background-color: rgb(14, 109, 57);
+    background-color: #2B9168;
 }
 
 header{
-    background-color: rgb(14, 109, 57);
+    background-color: #2B9168;
     display: flex;
     justify-content: space-around;
     height: 12vh;
