@@ -1,4 +1,5 @@
 import math
+import numpy as np
 from flask import Flask, request, render_template
 
 app = Flask(__name__, template_folder='template')
@@ -111,6 +112,44 @@ def uniform():
             res = uniform_calcs(a, b, x, y, type_str)
         return render_template('uniform.html', prediction_text='{}: {}'.format(type_str, res))
     return render_template('uniform.html', prediction_text='None')
+
+
+def exponen(a, b=0, mean=0, *distr):
+    decay_param = 1 / mean
+
+    if 'less than greater than' in distr:
+        b_val = 1 - np.exp((-decay_param) * b)
+        a_val = 1 - np.exp((-decay_param) * a)
+        return b_val - a_val
+
+    elif 'greater than' in distr:
+        res = np.exp((-decay_param) * a)
+        return res
+
+    elif 'less than' in distr:
+        res = 1 - np.exp((-decay_param) * a)
+        return res
+
+
+@app.route('/exponential', methods=['GET', 'POST'])
+def exponential():
+    if 'a' in request.form:
+        a = request.form['a']
+        b = request.form['b']
+        mean = request.form['mean']
+
+        a = float(a)
+        b = float(b)
+        mean = float(mean)
+
+        type_str = request.form['type']
+
+        if type_str in ['mean', 'variance']:
+            res = exponen(a, b, mean, type_str)
+        else:
+            res = exponen(a, b, mean, type_str)
+        return render_template('exponential.html', prediction_text='{}: {}'.format(type_str, res))
+    return render_template('exponential.html', prediction_text='None')
 
 
 if __name__ == '__main__':
