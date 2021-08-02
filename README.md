@@ -1,2 +1,2 @@
-## Statistics
-A Repo for calculating various statistical distributions.
+# Staty - A website that helps calculate probabilities of various distributions.
+## Website - https://staty.herokuapp.com/
