@@ -77,35 +77,22 @@ p
     section
     {
         padding: 0px;
-        background-color: pink;
-    }
-    .box_shape
-    {
-        padding-top: 20px;
-        background-color: white;
-        width: 250px;
-        height: 310px;
     }
     .btn1
     {
         position: relative;
         display: flex;
         justify-content: center;
-        margin-left: 35%;
+        margin-left: 100px;
+    }
+    .input1
+    {
+        height: 25px;
     }
     p
     {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-align: center;
-        width: 100%;
-    }
-    body
-    {
-        background-color: pink;
-    }
-    .in1
-    {
-        margin-top: 0px;
-        height: 40px;
+        font-size: 13px;
     }
 }
