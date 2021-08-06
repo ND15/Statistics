@@ -1,47 +1,71 @@
 <html>
 
 <head>
-    <title>Welcome</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Staty</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orelega+One&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet" />
-    <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
+    <!-- <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}"> -->
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" >staty.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/template/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../template/uniform.html">Uniform </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../template/binomial.html">Binomial </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Exponential </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Normal</a>
+              </li>
+            
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+  <!-- SECTION 1 -->
+
+  <div id="main-div">
     <div class="container">
-        <header>
-            <div class="logo-container">
-                <a href="">STATY</a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="" class="distribution">DISTRIBUTION &#9660;</a>
-                        <ul class="drop_down">
-                            <li><a href="uniform">Uniform</a></li>
-                            <li><a href="binomial">Binomial</a></li>
-                            <li><a href="">Exponential</a></li>
-                            <li><a href="">Normal</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">STATISTICS</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>SOLVE STATISTICS<br>WITH STATY.</h1>
-            </div>
-            <a href="stats">
-                <button class='btn1'>STATS</button>
-            </a>
-        </section>
+    
+        <div id="myimage" >
+            <img id="myimg" src="../images/calculator1.svg" alt="calculator" width="440" height="440">
+        </div>
+        <div  id="heading">
+            <h1 id="heading1">solve statistics with</h1>
+            <h1 id="heading2">staty.</h1>
+            
+        </div>
+        <a href="../template/stats.html" class="btn start_button">Get Started</a>
+
+        
     </div>
+  </div>
 </body>
 
 </html>
