@@ -1,3 +1,2 @@
-# Statistics
-A Repo for Statistics formulas
-new change made by rks0001
+# Staty - A website that helps calculate probabilities of various distributions.
+## Website - https://staty.herokuapp.com/

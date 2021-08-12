@@ -3,18 +3,18 @@ h1
 {
     text-align: center;
     font-family: 'Poppins';
-    color: white;
+    color: #ffaeae;
 }
 
 body
 {
-    background-color: #106284;
+    background-color: #5f0346;
 }
 
 section
 {
     padding: 0 100px;
-    background-color: #106284;
+    background-color: #5f0346;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ section
 .box_shape
 {
     position: relative;
-    background-color:#145482;
+    background-color:rgb(51 10 51);
     max-width: 600px;
     padding: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
@@ -43,12 +43,12 @@ section
     padding: 10px;
     border: none;
     width: 100px;
-    background-color: #00bec7;
+    background-color: rgb(247, 122, 6);
 }
 .btn1
 {
     border-radius: 5px;
-    margin-left: 115px;
+    margin-left: 145px;
 }
 .input1
 {
@@ -56,7 +56,7 @@ section
     border: none;
     width: 100%;
     height: 50px;
-    background-color: #e5fbff;
+    background-color: #ffffff21;
     margin-top: 15px;
     margin-bottom: 10px;
     margin-right: -5px;
@@ -83,7 +83,7 @@ p
         position: relative;
         display: flex;
         justify-content: center;
-        margin-left: 90px;
+        margin-left: 100px;
     }
     .input1
     {
@@ -91,8 +91,8 @@ p
     }
     p
     {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-align: center;
-        font-size:13px;
+        font-size: 13px;
     }
 }

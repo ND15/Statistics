@@ -2,32 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Uniform Distribution</title>
+    <title>Exponential Distribution</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/uniform_style.css') }}"> -->
-    <link rel="stylesheet" href="../static/css/uniform_style.css">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/expon_styles.css') }}">
     <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
 </head>
 <body>
-<h1>Uniform Distribution</h1>
+<h1>Exponential Distribution</h1>
 <section>
     <div class="box_shape">
         <div class="uniform">
-            <form action="{{url_for('uniform')}}" method="post">
+            <form action="{{url_for('exponential')}}" method="post">
                 <input type="text" name="a" placeholder="a value" required="required" class="input1 in1">
                 <br>
                 <input type="text" name="b" placeholder="b value" required="required" class="input1 in1">
                 <br>
-                <input type="text" name="x" placeholder="x value" required="required" class="input1 in1">
-                <br>
-                <input type="text" name="y" placeholder="y value" required="required" class="input1 in1">
+                <input type="text" name="mean" placeholder="mean value" required="required" class="input1 in1">
                 <br>
                 <input type="text" name="type" placeholder="type" required="required" class="input1 in1">
-                <p>Types: 'Less' is P(x<..), 'More' is P(x>..) <br>
-                Types: 'Conditional' is P(x>..|y>..)<br>
-                Types: 'Less' than greater than' is P(x<..< y) </p>
+                <p>Types: 'less than' is P(x<..), 'greater than' is P(x>..) </p>
+                <p>Types: 'less than greater than' is P(x<..< y) </p>
+                <br>
                 <button type="submit" class="btn btn1">Predict</button>
                 <p id=text>{{ prediction_text }}</p>
             </form>
